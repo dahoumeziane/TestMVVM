@@ -15,9 +15,9 @@ data class Product(
 data class Image(
     val small: String?,
     val large: String?,
-)
+):Serializable
 
 data class Brand(
     val id: String,
     val name: String
-)
+):Serializable

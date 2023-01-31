@@ -2,14 +2,14 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="170dp"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardCornerRadius="14dp"
     app:cardElevation="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="10dp">
@@ -40,6 +40,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/product_title"
                     android:text="Product title"
+                    android:maxLines="2"
                     android:textAppearance="@style/subtitle"
                     android:textColor="@color/primaryColor">
 
