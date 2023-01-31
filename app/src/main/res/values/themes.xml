@@ -18,7 +18,7 @@
         <item name="android:fontFamily">@font/poppins_semi_bold</item>
     </style>
     <style name="caption">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">8sp</item>
         <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
     <style name="bodySmall">
@@ -28,6 +28,14 @@
     <style name="bodyLarge">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="titleLarge">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+    </style>
+    <style name="titleXLarge">
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
     </style>
     <style name="subtitle">
         <item name="android:textSize">17sp</item>

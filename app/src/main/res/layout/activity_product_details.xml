@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    tools:context=".ui.ProductDetailsAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:id="@+id/product_image"
+                android:layout_marginTop="10dp">
+
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_margin="10dp"
+                android:id="@+id/back_btn"
+                android:layout_height="30dp"
+                android:background="@drawable/_solid_circle_white">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_back">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/_solid_white_top_20dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product title"
+                android:textAppearance="@style/titleLarge"
+                android:textColor="@color/primaryColor">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/product_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product brand"
+                android:textAppearance="@style/caption"
+                android:textColor="#b0B0B0">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product description in two lines"
+                android:textAppearance="@style/bodySmall">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="102$"
+                android:id="@+id/product_price"
+                android:textAppearance="@style/titleXLarge">
+
+            </TextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:background="@drawable/_solid_blue_20dp"
+                android:text="Order"
+                android:textAppearance="@style/button"
+                android:textColor="@color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
