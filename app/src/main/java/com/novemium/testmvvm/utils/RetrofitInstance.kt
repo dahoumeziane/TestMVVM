@@ -1,4 +1,6 @@
 package com.novemium.testmvvm.utils
+import com.novemium.testmvvm.data.api.ProductApi
+import com.novemium.testmvvm.utils.Helper.apiUrl
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -17,6 +19,9 @@ object RetrofitInstance {
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
+    }
+    val productsApi : ProductApi by lazy {
+        instance(apiUrl).create(ProductApi::class.java)
     }
 
 }
